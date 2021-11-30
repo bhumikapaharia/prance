@@ -43,6 +43,6 @@ jobs:
               python3 -m pip install virtualenv && python3 -m venv py38-venv && \
               source py38-venv/bin/activate && \
               python -m pip install --upgrade pip && \
-              pip install -r requirements.txt && \
+              pip install -r requirements_no_osv_or_icu.txt && \
               pytest -m "not requires_network" && \
               deactivate'
